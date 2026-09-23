@@ -1585,3 +1585,136 @@ body.dark-theme .social-btn:hover {
   background-color: #e5e5e5;
 }
 
+/* ===================================
+   Work Experience Section
+=================================== */
+#experience {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2.5rem auto 1.5rem;
+  text-align: left;
+}
+
+.work-exp-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.work-exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+body.dark-theme .work-exp-card {
+  background-color: #2d3748;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-theme .work-exp-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.work-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.work-exp-title-box {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.work-exp-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.75rem;
+  background-color: #f7fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #e2e8f0;
+}
+
+body.dark-theme .work-exp-icon-box {
+  background-color: #1a202c;
+  border-color: #4a5568;
+}
+
+.work-exp-icon-box .exp-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.work-exp-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0;
+}
+
+body.dark-theme .work-exp-role {
+  color: #f7fafc;
+}
+
+.work-exp-company {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-top: 0.25rem;
+}
+
+body.dark-theme .work-exp-company {
+  color: #cbd5e1;
+}
+
+.work-exp-meta {
+  display: flex;
+  align-items: center;
+}
+
+.work-exp-duration {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #718096;
+  background-color: #f1f5f9;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+}
+
+body.dark-theme .work-exp-duration {
+  color: #cbd5e1;
+  background-color: #1a202c;
+  border-color: #4a5568;
+}
+
+@media screen and (max-width: 640px) {
+  .work-exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .work-exp-meta {
+    margin-left: 4.5rem;
+  }
+}
+
